@@ -1,5 +1,5 @@
 {
-  "name": "expressjs-rest-skeleton",
+  "name": "express-rest-skeleton",
   "version": "1.0.0",
   "description": "Skeleton for RESTful API in Node.js based Express.js framework.",
   "main": "src/server.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Talar1997/expressjs-rest-skeleton.git"
+    "url": "git+https://github.com/Talar1997/express-rest-skeleton.git"
   },
   "keywords": [
     "REST",
