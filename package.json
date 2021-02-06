@@ -1,0 +1,77 @@
+{
+  "name": "expressjs-rest-skeleton",
+  "version": "1.0.0",
+  "description": "Skeleton for RESTful API in Node.js based Express.js framework.",
+  "main": "src/server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "nyc mocha tests/**/*.js --config ./mocha.config.json dotenv/config",
+    "dev": "cls && cd src && nodemon --watch ../config.env --watch ../src server.js",
+    "server": "node server",
+    "prodOld": "nohup node server >> app.log 2>&1 &",
+    "prodForever": "cd src && forever server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Talar1997/expressjs-rest-skeleton.git"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "Express",
+    "Express.js",
+    "Node.js",
+    "API",
+    "RESTFUL",
+    "REST",
+    "SKELETON",
+    "EXAMPLE"
+  ],
+  "author": "Adam Talarczyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Talar1997/expressjs-rest-skeleton/issues"
+  },
+  "homepage": "https://github.com/Talar1997/expressjs-rest-skeleton#readme",
+  "dependencies": {
+    "agenda": "^3.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-http-context": "^1.2.4",
+    "express-mongo-sanitize": "^1.3.2",
+    "express-rate-limit": "^5.2.3",
+    "forever": "^3.0.4",
+    "hpp": "^0.2.3",
+    "isomorphic-fetch": "^3.0.0",
+    "mocha": "^8.2.1",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.3",
+    "mongodb-snapshot": "^1.2.1",
+    "mongoose": "^5.11.8",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.17",
+    "recaptcha-v2": "^0.1.3",
+    "typedi": "^0.9.0",
+    "validator": "^12.2.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^8.2.0",
+    "helmet": "^3.23.3",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.6",
+    "nyc": "^15.1.0",
+    "xss-clean": "^0.1.1"
+  }
+}
