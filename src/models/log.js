@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
-Schema = mongoose.Schema
+const Schema = mongoose.Schema
 
-const logSchema = new mongoose.Schema({
+const logSchema = new Schema({
     issuedAt: {
         type: Number,
         default: Date.now(),

@@ -1,5 +1,4 @@
 const express = require('express')
-const helpers = require('../utils/consoleHelpers')
 const helmet = require('helmet')
 const xss = require('xss-clean')
 const hpp = require('hpp')
@@ -19,5 +18,4 @@ module.exports = async (app) => {
     app.use(express.json({limit: '15kb'}))
 
     logger.info(`Security has been configured correctly`)
-
 }

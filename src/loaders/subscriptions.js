@@ -6,6 +6,9 @@ const logger = require('./logger')
 
 module.exports = async () => {
     logger.info(`Searching for listeners...`)
-
+    await onDelete()
+    await onAppError()
+    await onUpdate()
+    await onCreate()
     logger.info(`Listeners has been set`)
 }

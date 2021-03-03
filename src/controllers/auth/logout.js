@@ -1,6 +1,7 @@
 const successResponse = require('./../response/successResponse')
 const {status} = require('../../config/constants/statusCodes')
 
+// eslint-disable-next-line no-unused-vars
 module.exports = () => async (req, res, next) => {
     res.clearCookie('authToken', {path: '/'})
     const message = "authToken removed successfully"

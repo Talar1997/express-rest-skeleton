@@ -1,6 +1,7 @@
 const {status} = require('../../config/constants/statusCodes')
 const {environment} = require('./../../config/index')
 
+// eslint-disable-next-line no-unused-vars
 module.exports = (err, req, res, next) => {
     err.statusCode = err.statusCode || status.SERVER_ERROR
     err.status = err.status || 'error'
