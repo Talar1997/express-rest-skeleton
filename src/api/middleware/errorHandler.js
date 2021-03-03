@@ -14,5 +14,5 @@ module.exports = (error, req, res, next) => {
         return next(error, req, res, next)
     else
         return next(new AppError(status.SERVER_ERROR, 'fail', `Unhandler error. ${error.name}. ${error.message}`), req, res, next)
-};
+}
 

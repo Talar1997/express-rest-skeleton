@@ -1,7 +1,7 @@
 const AppError = require("../../utils/appError")
 const handleError = require("../../api/middleware/errorHandler")
 const successResponse = require('../response/successResponse')
-const BaseService = require("../../services/baseService");
+const BaseService = require("../../services/baseService")
 const {status} = require('../../config/constants/statusCodes')
 
 module.exports = Model => async (req, res, next) => {

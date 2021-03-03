@@ -20,5 +20,5 @@ module.exports = async () => {
         })
         .catch((error) => logger.error(`Database connection failed`, {error: error}))
 
-    return connection.connection.db;
+    return connection.connection.db
 }

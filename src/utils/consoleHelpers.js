@@ -1,4 +1,4 @@
-const logger = require("../loaders/logger");
+const logger = require("../loaders/logger")
 
 exports.welcomeMessage = () => {
     logger.info(
@@ -8,5 +8,5 @@ exports.welcomeMessage = () => {
         "███████║██████╔╝██║\n" +
         "██╔══██║██╔═══╝░██║\n" +
         "██║░░██║██║░░░░░██║\n" +
-        "╚═╝░░╚═╝╚═╝░░░░░╚═╝");
-};
+        "╚═╝░░╚═╝╚═╝░░░░░╚═╝")
+}

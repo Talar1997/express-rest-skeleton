@@ -7,4 +7,4 @@ module.exports = () => async (req, res, next) => {
 
     //TODO: replace it with 204 No Content when deprecated logout will be removed
     successResponse(res, status.OK, null, false, {message})
-};
+}

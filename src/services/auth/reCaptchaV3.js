@@ -1,7 +1,7 @@
 require('isomorphic-fetch')
 const config = require('../../config')
-const AppError = require("../../utils/appError");
-const logger = require("../../loaders/logger");
+const AppError = require("../../utils/appError")
+const logger = require("../../loaders/logger")
 const {status} = require('../../config/constants/statusCodes')
 
 module.exports = async (reCaptcha) => {

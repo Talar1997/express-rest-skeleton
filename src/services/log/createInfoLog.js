@@ -1,7 +1,7 @@
 const createLog = require('./createLog')
 const {severities} = require('../../config/constants/logSeverities')
 const httpContext = require("express-http-context")
-const logger = require("../../loaders/logger");
+const logger = require("../../loaders/logger")
 
 module.exports = async (obj, level = severities.INFO) => {
     const userDetails = httpContext.get('userDetails')
@@ -14,4 +14,4 @@ module.exports = async (obj, level = severities.INFO) => {
     else{
         logger.warn("HttpContext doesn't provide necessary data to create log")
     }
-};
+}

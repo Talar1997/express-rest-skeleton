@@ -10,6 +10,6 @@ module.exports = Model => async (req, res, next) => {
 
         successResponse(res, status.CREATED, {doc: createdDocument})
     } catch (error) {
-        return handleError(error, req, res, next);
+        return handleError(error, req, res, next)
     }
 }

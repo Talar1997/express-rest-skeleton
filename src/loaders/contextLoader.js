@@ -4,7 +4,7 @@ const logger = require('./logger')
 module.exports = async (app) => {
     logger.info('Creating httpContext...')
 
-    app.use(httpContext.middleware);
+    app.use(httpContext.middleware)
 
     app.use((req, res, next) => {
         const details = {

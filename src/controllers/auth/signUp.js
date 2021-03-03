@@ -8,8 +8,8 @@ module.exports = () => async (req, res, next) => {
         let user = req.body
         let createdUser = await UserService.createUser(user)
 
-        successResponse(res, status.CREATED, {user: createdUser});
+        successResponse(res, status.CREATED, {user: createdUser})
     } catch (error) {
-        handleError(error, req, res, next);
+        handleError(error, req, res, next)
     }
 }

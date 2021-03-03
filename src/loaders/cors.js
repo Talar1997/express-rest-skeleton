@@ -1,4 +1,4 @@
-const cors = require('cors');
+const cors = require('cors')
 const options = require('../config/index')
 const logger = require('./logger')
 

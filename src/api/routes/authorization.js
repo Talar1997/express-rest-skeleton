@@ -14,4 +14,4 @@ router
     .route('/')
     .get(authController.checkTokenValidation)
 
-module.exports = router;
+module.exports = router

@@ -14,7 +14,7 @@ module.exports = async (id, userObject) => {
         const isPasswordCorrect = await validatePassword(userObject.password)
 
         if (isPasswordCorrect) {
-            userObject.password = await bcrypt.hash(userObject.password, 12);
+            userObject.password = await bcrypt.hash(userObject.password, 12)
             passwordHasBeenChanged = true
         } else {
             throw new AppError(status.UNPROCESSABLE_ENTITY, 'fail', 'Validation failed!')

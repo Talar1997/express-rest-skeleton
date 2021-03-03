@@ -1,3 +1,3 @@
 const validateToken = require('./validateToken')
 
-module.exports = async token => await validateToken(token);
+module.exports = async token => await validateToken(token)

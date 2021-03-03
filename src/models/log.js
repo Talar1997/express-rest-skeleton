@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-Schema = mongoose.Schema;
+Schema = mongoose.Schema
 
 const logSchema = new mongoose.Schema({
     issuedAt: {
@@ -48,7 +48,7 @@ const logSchema = new mongoose.Schema({
         type: String,
         required: false
     }
-});
+})
 
 logSchema.index({name: 'text', 'targetObjectString': 'text'})
 

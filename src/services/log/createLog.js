@@ -1,5 +1,5 @@
 const Log = require('./../../models/log')
-const logger = require("../../loaders/logger");
+const logger = require("../../loaders/logger")
 
 module.exports = async (requestDetails, userDetails, level, targetObject, targetObjectString = null) => {
     let logObject = {
@@ -18,4 +18,4 @@ module.exports = async (requestDetails, userDetails, level, targetObject, target
     }
 
     await Log.create(logObject).catch(error => logger.error("An error occurred", {error: error}))
-};
+}

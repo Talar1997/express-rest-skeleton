@@ -1,6 +1,6 @@
 const config = require('../../config')
-const AppError = require("../../utils/appError");
-const logger = require("../../loaders/logger");
+const AppError = require("../../utils/appError")
+const logger = require("../../loaders/logger")
 const ReCaptchaV2 = require('recaptcha-v2').Recaptcha
 const {status} = require('../../config/constants/statusCodes')
 
@@ -14,9 +14,9 @@ module.exports = async (reCaptcha) => {
         remoteip: reCaptcha.remoteIp,
         response: reCaptcha.token,
         secret: config.recaptcha.privateKey
-    };
+    }
 
-    let recaptcha = new ReCaptchaV2(config.recaptcha.siteKey, config.recaptcha.privateKey, data, false);
+    let recaptcha = new ReCaptchaV2(config.recaptcha.siteKey, config.recaptcha.privateKey, data, false)
 
     const verifyPromise = new Promise((resolve, reject) => {
         recaptcha.verify((success, error_code) => {

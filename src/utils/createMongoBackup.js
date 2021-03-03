@@ -11,7 +11,7 @@ module.exports = async (basePath) => {
             uri: config.database.uri,
             dbname: config.database.name,
         },
-    });
+    })
 
     const backupName = moment(new Date()).format('DD-MM-YYYY-HHmmss')
 
@@ -22,12 +22,12 @@ module.exports = async (basePath) => {
             connection: {
                 path: `${basePath}/${backupName}.tar`,
             },
-        });
+        })
 
         const mongoTransferer = new MongoTransferer({
             source: mongoDBDuplexConnector,
             targets: [localFileSystemDuplexConnector],
-        });
+        })
 
         for await (const { total, write } of mongoTransferer) {
             if(total - write === 0){

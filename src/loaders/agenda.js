@@ -10,7 +10,7 @@ module.exports = async (mongoConnection) => {
         db: { collection: config.agenda.dbCollection },
         processEvery: config.agenda.pooltime,
         maxConcurrency: config.agenda.concurrency,
-    });
+    })
 
     logger.info(`Agenda has been set up`)
 
